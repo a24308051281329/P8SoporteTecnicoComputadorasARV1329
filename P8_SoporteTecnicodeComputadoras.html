@@ -10,18 +10,179 @@
 <body style="background-color:#D2E4E4;">
 	<center>
 <header>
-	<h1 style="background-color:#5F9EA0; color: white; height: 70px"><font size="20px"> Soporte Tecnico de Computadoras </font></h1>
+	<h1 style="background-color:#5F9EA0; color: white; padding: 25px; margin: 0;"><font size="20px"> Soporte Tecnico de Computadoras </font></h1>
 </header>
-<nav style="background-color:#3D6566;">
-	<a href=""; style="color: white; "> inicio</a>
-	<a href=""; style="color: white;"> Soporte</a>
-	<a href=""; style="color: white;"> reporte</a>
-	<a href=""; style="color: white;"> Contacto</a>
-</nav>
+ <nav style="background-color:#3D6566; padding: 10px;">
+    <a href="#inicio" style="color: white;">Inicio</a>
+    <a href="#servicios" style="color: white;">Servicios</a>
+    <a href="#soporte" style="color: white;">Solicitar soporte</a>
+    <a href="#contacto" style="color: white;">Contacto</a>
+   </nav>
 
-<p>SISISIS</p>
+        <section id="inicio">
+            <h2>¿Necesitas ayuda con tu computadora?</h2>
 
-<footer style="background-color:#3D6566; color: white; w">
+            <p>
+                Te ofrecemos soporte técnico para resolver
+                problemas de computadoras, laptops y programas.
+            </p>
+
+            <p> Nuestro objetivo es ayudar a nuestros clientes 
+            	a mantener sus equipos funcionando correctamente y
+                solucionar problemas de manera sencilla y rápida. </p> 
+
+            <p> Puedes consultar nuestros servicios y precios,
+                y si necesitas ayuda, puedes llenar nuestro 
+                formulario de contacto. </p>
+
+            <p>
+                Completa nuestro formulario y cuéntanos qué problema
+                presenta tu equipo.
+            </p>
+        </section>
+
+        <section id="servicios">
+            <h2>Nuestros servicios</h2>
+            <ul> 
+            	<li>Diagnóstico de computadora — $150</li> 
+            	<li>Mantenimiento básico — $300</li> 
+            	<li>Instalación de programas — $200</li> 
+            	<li>Configuración de internet — $250</li> 
+            	<li>Limpieza de computadora — $350</li> 
+            	<li>Reparación de software — $400</li> 
+            </ul> 
+            <p> <strong>Nota:</strong> 
+            Los precios son aproximados y pueden variar dependiendo 
+        	del problema y del equipo. </p>
+
+        </section>
+
+        <section id="soporte">
+            <h2>Solicita soporte técnico</h2>
+
+            <form action="" method="post">
+
+                Tipo de equipo:
+                <select name="equipo">
+                    <option value="1">Laptop</option>
+                    <option value="2">Computadora de escritorio</option>
+                    <option value="3">impresora</option>
+                    <option value="4"> Otro</option>
+                </select>
+                <br>
+
+                <strong>¿Qué problema presenta?</strong>
+
+                <div class="opciones">
+                    <input type="radio" name="problema" value="1">
+                    No enciende
+                    <br>
+
+                    <input type="radio" name="problema" value="2">
+                    Está lenta
+                    <br>
+
+                    <input type="radio" name="problema" value="3">
+                    Problemas de internet
+                    <br>
+
+                    <input type="radio" name="problema" value="4">
+                    Problemas con programas
+                    <br>
+
+                    <input type="radio" name="problema" value="5">
+                    Otro problema
+                </div>
+                <br>
+                <strong>¿Qué servicio necesitas?</strong>
+
+                <div class="opciones">
+                    <input type="checkbox" name="servicio" value="1">
+                    Mantenimiento
+                    <br>
+
+                    <input type="checkbox" name="servicio" value="2">
+                    Reparación
+                    <br>
+
+                    <input type="checkbox" name="servicio" value="3">
+                    Instalación de programas
+                    <br>
+
+                    <input type="checkbox" name="servicio" value="4">
+                    Problemas de internet
+                </div>
+                <br>
+                    Describe el problema:
+                    <br>
+
+                <textarea  name="descripcion" rows="2" cols="40"> </textarea>
+
+                <br>
+
+                    Puedes adjuntar una imagen del problema:
+
+                <input type="file"  name="archivo">
+
+                <button type="submit" class="enviar"> Enviar solicitud <i class="fa-regular fa-paper-plane"></i></button>
+                <button type="reset" class="borrar"> Borrar <i class="fa fa-trash"></i></button>
+            </form>
+			
+<section id="contacto">
+
+    <h2>Contacto</h2>
+
+    <form action="" method="post">
+
+        Ingresa tu nombre:
+        <input type="text" name="nombre" size="20">
+        <br>
+
+        Ingresa tu correo:
+        <input type="email" name="correo" size="20">
+        <br>
+
+        Ingresa tu teléfono:
+        <input type="text" name="telefono" size="20">
+        <br>
+
+        Selecciona el motivo de contacto:
+        <select name="motivo">
+            <option value="1">Soporte técnico</option>
+            <option value="2">Mantenimiento</option>
+            <option value="3">Reparación</option>
+            <option value="4">Otro</option>
+        </select>
+        <br><br>
+
+        ¿Cómo prefieres que te contactemos?
+        <br>
+
+        <input type="radio" name="contacto" value="1">
+        Correo electrónico
+        <br>
+
+        <input type="radio" name="contacto" value="2">
+        Teléfono
+        <br>
+
+        <input type="radio" name="contacto" value="3">
+        Ambos
+        <br><br>
+
+        Escribe tu mensaje:
+        <br>
+
+        <textarea name="mensaje" rows="2" cols="40"></textarea>
+        <br>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Borrar</button>
+
+    </form>
+        </section>
+
+<footer style="background-color:#3D6566; color: white; ">
 <p>Ailyn Ramirez Villa</p>
 <p>1329</p>
 <p>5 - J</p>
